@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navegacion"
+            app:startDestination="@id/framgento3">
+    <fragment android:id="@+id/fragmento2" android:name="com.example.navegacionintro.Fragmento2"
+              android:label="fragment_fragmento2" tools:layout="@layout/fragment_fragmento2"/>
+    <fragment android:id="@+id/framgento3" android:name="com.example.navegacionintro.Framgento3"
+              android:label="fragment_framgento3" tools:layout="@layout/fragment_framgento3">
+        <action android:id="@+id/de_3_a_2" app:destination="@id/fragmento2"
+                app:enterAnim="@anim/nav_default_enter_anim" app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim" app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+</navigation>
