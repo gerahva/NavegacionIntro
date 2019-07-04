@@ -107,3 +107,45 @@ Para que pueda hacerse uso del boton1 es importante importar éste:
 
 ![](.README_images/08f6d32d.png)
 
+Para poder ingresar un video en el segundo fragmento, primero debemos quitar el margen superior de la pantalla para que el video se muestre de forma completa, nos posicionamos 
+en la carpeta VALUES, abrimos el archivo styles.xml:
+
+![](.README_images/ad686a68.png)
+
+Agregamos a la linea styles la siguiente instrucción NoActionBar:
+
+![](.README_images/1d02d2ae.png)
+
+Para ingresar un video en el fragmento2, nos posicionamos en la paleta de herramientas , en Widgets, seleccionamos la opción VideoView, arrastramos esta última opción sl lsyout:
+
+![](.README_images/9cbf6c4e.png)
+
+Damos el margen correspondiente al Video que vamos a colocar en el layout:
+
+
+![](.README_images/4b0addff.png)
+
+En la carpeta manifests, abrimos el archivo AndroidManifest.xml para dar el permiso correspondiente:
+
+![](.README_images/1d3f6519.png)
+
+Agregamos la linea que se indica a continuación con la finalidad de dar el permiso a Internet:
+
+![](.README_images/903a260a.png)
+
+Una vez que agregamos el permiso a Internet, en el fragmento2 que es en donde aparacerá el video, anexamos el siguiente código para que el video pueda reproducirse una vez que cambiemos a ese layout,
+creamos un onViewCreated:
+
+![](.README_images/ff8f0678.png)
+
+Importamos el método View:
+
+![](.README_images/54917d7f.png)
+
+Anexamos las siguientes líneas de código, donde indicaremos la ruta en la cual se encuentra el video a presentar en el layout, asi como los métodos que harán que el video se visualice:
+
+![](.README_images/1a56ec48.png)
+
+
+
+
