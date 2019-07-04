@@ -80,3 +80,30 @@ al fragmento, con el nombre que tienen cada uno de éstos, los cuales aparecen d
 Ahora editaremos cada pantalla, en esta ocasión pondremos un botón al fragmento 1 para pasar al fragmento 2:
 
 ![](.README_images/52c40036.png)
+
+Dentro de la carpeta layout, seleccionamos el primerfragmento y procedemos a borrar el texto que viene por default en cada unos de los layaout, seleccionando TextView y lo suprimimos:
+
+![](.README_images/fddd4d84.png)
+
+En la paleta seleccionamos el layout, seleccionamos el Constraintlayout, lo arrastramos y se expande:
+
+![](.README_images/04e309b4.png)
+
+Le agregamos un botón para poder navegar de un fragmento a otro y veamos si funciona la navegación, le ponemos un ID al boton, así como lo anclamos con las dimensiones correspondientes
+y le cambiamos el texto al botón.
+
+![](.README_images/50d5574e.png)
+
+Ahora agregamos un método que se llame onviewcreate el cual nos hará el trabajo de pasar de una pantalla a otra, escribimos "override fun onViewCreated" y le damos enter y nos
+aparece el código siguiente:
+
+![](.README_images/fb17ee46.png)
+
+Anexamos la siguiente parte de código la cual va a dar funcionalidad al botón que ingresamos al layout, método findNavController nos hará el cambio de una pantalla a otra.
+
+![](.README_images/8f901c62.png)
+
+Para que pueda hacerse uso del boton1 es importante importar éste:
+
+![](.README_images/08f6d32d.png)
+
